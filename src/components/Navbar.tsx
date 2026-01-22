@@ -21,13 +21,13 @@ const Navbar = () => {
           <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">
             Features
           </a>
-          <a className="text-muted-foreground hover:text-foreground transition-colors" href="https://xlnk-ai.hf.space/">
+          <a className="text-muted-foreground hover:text-foreground transition-colors" href="https://xlnkai.pages.dev/">
             ​try it 
           </a>
         </div>
 
         <Button size="sm" className="glow" asChild>
-          <a href="https://xlnk-ai.hf.space/" target="_blank" rel="noopener noreferrer">
+          <a href="https://xlnkai.pages.dev/" target="_blank" rel="noopener noreferrer">
             Try Free
           </a>
         </Button>
