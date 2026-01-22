@@ -117,7 +117,7 @@ const CTASection = () => {
               className="group px-12 py-8 text-xl glow"
               asChild
             >
-              <a href="https://xlnk-ai.hf.space/" target="_blank" rel="noopener noreferrer">
+              <a href="https://xlnkai.pages.dev/" target="_blank" rel="noopener noreferrer">
                 Try xlnk AI Now
                 <motion.div
                   className="ml-3"

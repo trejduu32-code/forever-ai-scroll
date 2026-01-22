@@ -168,7 +168,7 @@ const HeroSection = () => {
           scale: 0.95
         }}>
             <Button size="lg" className="group px-8 py-6 text-lg glow" asChild>
-              <a href="https://xlnk-ai.hf.space/" target="_blank" rel="noopener noreferrer">
+              <a href="https://xlnkai.pages.dev/" target="_blank" rel="noopener noreferrer">
                 Start Chatting
                 <motion.div className="ml-2" animate={{
                 x: [0, 5, 0]
