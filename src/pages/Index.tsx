@@ -9,6 +9,7 @@ import HowItWorksSection from "@/components/HowItWorksSection";
 import UseCasesSection from "@/components/UseCasesSection";
 import ParallaxSection from "@/components/ParallaxSection";
 import ComparisonSection from "@/components/ComparisonSection";
+import CompetitorRoastSection from "@/components/CompetitorRoastSection";
 import TimelineSection from "@/components/TimelineSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
@@ -28,6 +29,7 @@ const Index = () => {
       <HowItWorksSection />
       <UseCasesSection />
       <ParallaxSection />
+      <CompetitorRoastSection />
       <ComparisonSection />
       <TimelineSection />
       <TestimonialsSection />
