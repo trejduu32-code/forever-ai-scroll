@@ -96,7 +96,7 @@ const CompetitorRoastSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               F**k{" "}
-              <span className="text-destructive">DeepSeek</span>,
+              <span className="text-[#4D6BFE]">DeepSeek</span>,
             </motion.span>
             <motion.span
               className="block"
@@ -104,8 +104,8 @@ const CompetitorRoastSection = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <span className="text-blue-400">Copilot</span>,{" "}
-              <span className="text-orange-400">Claude</span>,
+              <span className="text-[#7B83EB]">Copilot</span>,{" "}
+              <span className="text-[#D4A27F]">Claude</span>,
             </motion.span>
             <motion.span
               className="block"
@@ -113,7 +113,7 @@ const CompetitorRoastSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              & <span className="text-green-400">ChatGPT</span>
+              & <span className="text-[#10A37F]">ChatGPT</span>
             </motion.span>
           </h2>
 
