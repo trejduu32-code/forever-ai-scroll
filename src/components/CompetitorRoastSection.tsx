@@ -6,27 +6,39 @@ import { X, Check, Zap, Shield, Infinity as InfinityIcon, CreditCard, Lock, Cpu,
 const competitors = [
   {
     name: "DeepSeek",
-    icon: "🔍",
+    logo: "/logos/deepseek.png",
     problems: ["Data privacy concerns", "Limited availability", "Censored responses"],
-    color: "from-red-500/20 to-red-900/10",
+    brandColor: "#4D6BFE",
+    glowColor: "from-[#4D6BFE]/20 to-[#4D6BFE]/5",
+    textColor: "text-[#4D6BFE]",
+    borderHover: "hover:border-[#4D6BFE]/50",
   },
   {
     name: "Copilot",
-    icon: "🤖",
+    logo: "/logos/copilot.png",
     problems: ["Requires Microsoft subscription", "Limited free tier", "Locked into ecosystem"],
-    color: "from-blue-500/20 to-blue-900/10",
+    brandColor: "#7B83EB",
+    glowColor: "from-[#7B83EB]/20 to-[#7B83EB]/5",
+    textColor: "text-[#7B83EB]",
+    borderHover: "hover:border-[#7B83EB]/50",
   },
   {
     name: "Claude",
-    icon: "🧠",
+    logo: "/logos/claude.png",
     problems: ["$20/month for Pro", "Message limits on free", "No image generation"],
-    color: "from-orange-500/20 to-orange-900/10",
+    brandColor: "#D4A27F",
+    glowColor: "from-[#D4A27F]/20 to-[#D4A27F]/5",
+    textColor: "text-[#D4A27F]",
+    borderHover: "hover:border-[#D4A27F]/50",
   },
   {
     name: "ChatGPT",
-    icon: "💬",
+    logo: "/logos/chatgpt.svg",
     problems: ["$20/month for GPT-4", "Rate limited", "Training on your data"],
-    color: "from-green-500/20 to-green-900/10",
+    brandColor: "#10A37F",
+    glowColor: "from-[#10A37F]/20 to-[#10A37F]/5",
+    textColor: "text-[#10A37F]",
+    borderHover: "hover:border-[#10A37F]/50",
   },
 ];
 
@@ -84,7 +96,7 @@ const CompetitorRoastSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               F**k{" "}
-              <span className="text-destructive">DeepSeek</span>,
+              <span className="text-[#4D6BFE]">DeepSeek</span>,
             </motion.span>
             <motion.span
               className="block"
@@ -92,8 +104,8 @@ const CompetitorRoastSection = () => {
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <span className="text-blue-400">Copilot</span>,{" "}
-              <span className="text-orange-400">Claude</span>,
+              <span className="text-[#7B83EB]">Copilot</span>,{" "}
+              <span className="text-[#D4A27F]">Claude</span>,
             </motion.span>
             <motion.span
               className="block"
@@ -101,7 +113,7 @@ const CompetitorRoastSection = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              & <span className="text-green-400">ChatGPT</span>
+              & <span className="text-[#10A37F]">ChatGPT</span>
             </motion.span>
           </h2>
 
@@ -127,8 +139,8 @@ const CompetitorRoastSection = () => {
               whileHover={{ scale: 1.03, y: -5 }}
               className="relative group"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${comp.color} rounded-2xl blur-xl group-hover:blur-2xl transition-all`} />
-              <div className="relative bg-card border border-border rounded-2xl p-8 overflow-hidden">
+              <div className={`absolute inset-0 bg-gradient-to-br ${comp.glowColor} rounded-2xl blur-xl group-hover:blur-2xl transition-all`} />
+              <div className={`relative bg-card border border-border rounded-2xl p-8 overflow-hidden ${comp.borderHover} transition-colors`}>
                 <div className="absolute top-4 right-4">
                   <motion.div
                     className="w-10 h-10 rounded-full bg-destructive/20 flex items-center justify-center"
@@ -139,8 +151,10 @@ const CompetitorRoastSection = () => {
                   </motion.div>
                 </div>
 
-                <div className="text-4xl mb-3">{comp.icon}</div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">{comp.name}</h3>
+                <div className="w-14 h-14 mb-4 rounded-xl bg-secondary/50 flex items-center justify-center p-2">
+                  <img src={comp.logo} alt={comp.name} className="w-10 h-10 object-contain" />
+                </div>
+                <h3 className={`text-2xl font-bold mb-4 ${comp.textColor}`}>{comp.name}</h3>
                 
                 <ul className="space-y-3">
                   {comp.problems.map((problem, i) => (
