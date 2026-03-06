@@ -139,8 +139,8 @@ const CompetitorRoastSection = () => {
               whileHover={{ scale: 1.03, y: -5 }}
               className="relative group"
             >
-              <div className={`absolute inset-0 bg-gradient-to-br ${comp.color} rounded-2xl blur-xl group-hover:blur-2xl transition-all`} />
-              <div className="relative bg-card border border-border rounded-2xl p-8 overflow-hidden">
+              <div className={`absolute inset-0 bg-gradient-to-br ${comp.glowColor} rounded-2xl blur-xl group-hover:blur-2xl transition-all`} />
+              <div className={`relative bg-card border border-border rounded-2xl p-8 overflow-hidden ${comp.borderHover} transition-colors`}>
                 <div className="absolute top-4 right-4">
                   <motion.div
                     className="w-10 h-10 rounded-full bg-destructive/20 flex items-center justify-center"
@@ -151,8 +151,10 @@ const CompetitorRoastSection = () => {
                   </motion.div>
                 </div>
 
-                <div className="text-4xl mb-3">{comp.icon}</div>
-                <h3 className="text-2xl font-bold mb-4 text-foreground">{comp.name}</h3>
+                <div className="w-14 h-14 mb-4 rounded-xl bg-secondary/50 flex items-center justify-center p-2">
+                  <img src={comp.logo} alt={comp.name} className="w-10 h-10 object-contain" />
+                </div>
+                <h3 className={`text-2xl font-bold mb-4 ${comp.textColor}`}>{comp.name}</h3>
                 
                 <ul className="space-y-3">
                   {comp.problems.map((problem, i) => (
