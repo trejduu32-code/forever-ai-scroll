@@ -15,6 +15,10 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import ParallaxBreak1 from "@/components/ParallaxBreak1";
+import ParallaxBreak2 from "@/components/ParallaxBreak2";
+import ParallaxBreak3 from "@/components/ParallaxBreak3";
+import ParallaxBreak4 from "@/components/ParallaxBreak4";
 
 const Index = () => {
   return (
@@ -23,13 +27,17 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <StatsSection />
+      <ParallaxBreak1 />
       <HardwareSection />
       <FeaturesSection />
+      <ParallaxBreak2 />
       <LanguagesSection />
       <HowItWorksSection />
+      <ParallaxBreak3 />
       <UseCasesSection />
       <ParallaxSection />
       <CompetitorRoastSection />
+      <ParallaxBreak4 />
       <ComparisonSection />
       <TimelineSection />
       <TestimonialsSection />
