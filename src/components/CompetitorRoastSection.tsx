@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { X, Check, Zap, Shield, Infinity, CreditCard, Lock, Cpu } from "lucide-react";
+import { X, Check, Zap, Shield, Infinity, CreditCard, Lock, Cpu, type LucideIcon } from "lucide-react";
 
 const competitors = [
   {
