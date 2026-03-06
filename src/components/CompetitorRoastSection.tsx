@@ -31,7 +31,7 @@ const competitors = [
 ];
 
 const xlnkAdvantages: { icon: LucideIcon; title: string; desc: string }[] = [
-  { icon: Infinity, title: "Unlimited Messages", desc: "No caps. No throttling. Ever." },
+  { icon: InfinityIcon, title: "Unlimited Messages", desc: "No caps. No throttling. Ever." },
   { icon: CreditCard, title: "100% Free Forever", desc: "No credit card. No trials. No BS." },
   { icon: Shield, title: "Privacy First", desc: "We don't sell your data. Period." },
   { icon: Zap, title: "Lightning Fast", desc: "Built lean. Runs on humble hardware." },
